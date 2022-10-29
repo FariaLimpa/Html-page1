@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        }
+        .container {
+            display: grid;
+            /* background-color: aquamarine; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 70px 1fr 70px;
+            width: 100%;
+            height: 600px;
+            gap: 10px;
+        }
+        .Item {
+            background-color: powderblue;
+            color: black;
+        }
+        .Header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+        }
+        li {
+            display: inline;
+            margin: 50px;
+            font-size: larger;
+            font-weight: bold;
+        }
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            margin-right: 470px;
+            color: black;
+            font-style: initial;
+        }
+        .Middle {
+            justify-self: center;
+            align-self: center;
+            height: 500px;
+            width: 500px;
+        }
+        .left {
+            padding: 30px;
+            text-align: justify;
+            font-size: large;
+        }
+        .right {
+            padding: 30px;
+            text-align: justify;
+            font-size: large;
+        }
+    .footer {
+        display: inline;
+        text-align: center;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Item Header">
+            <ul>
+                <li class="logo">STARTUP</li>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>About</li>
+                <li><b><input type="text" placeholder="Search"></b> </li>
+            </ul>
+        </div>
+        <div class="Item left">
+            <h3>What is Startup and Ecosystem?</h3>
+            A startup or start-up is a company or project undertaken by an entrepreneur to seek, develop, and validate a scalable business model. While entrepreneurship refers to all new businesses, including self-employment and businesses that never intend to become registered, startups refer to new businesses that intend to grow large beyond the solo founder. At the beginning, startups face high uncertainty and have high rates of failure, but a minority of them do go on to be successful and influential.
+            <br><br>
+            The size and maturity of the startup ecosystem is where a startup is launched and where it grows to have an effect on the volume and success of the startups. The startup ecosystem consists of the individuals; institutions and organizations (top research universities and institutes, business schools and entrepreneurship programs and centres operated by universities and colleges, government entrepreneurship programs and services, Chambers of commerce) business incubators and business accelerators and top-performing entrepreneurial firms and startups. A region with all of these elements is considered to be a "strong" startup ecosystem.
+        </div>
+        <div class="Item Middle">
+           <img src="StartupEcosystem.png" alt="picture" height="100%" width="100%"> 
+        </div>
+        <div class="Item right">
+            <h3>Principle of Lean Startup</h3>
+            Lean startup is a clear set of principles to create and design startups under limited resources and tremendous uncertainty to build their ventures more flexibly and at a lower cost. It is based on the idea that entrepreneurs can make their implicit assumptions about how their venture works explicit and empirically testing it. Hence, lean startup is a set of principles for entrepreneurial learning and business model design. More precisely, it is a set of design principles aimed for iteratively experiential learning under uncertainty in an engaged empirical manner. Typically, lean startup focuses on a few lean principles:
+            <br><br>
+
+            * find a problem worth solving, then define a solution
+            <br>
+            * engage early adopters for market validation
+            <br>
+            * continually test with smaller, faster iterations
+            <br>
+            * build a function, measure customer response, and verify/refute the idea
+            <br>
+            * evidence-based decisions on when to "pivot" by changing your plan's course
+            <br>
+            * maximize the efforts for speed, learning, and focus
+        </div>
+        <div class="Item footer">
+            <h5 style="justify-self: center;">Copyright@Wikipedia</h5>
+        </div>
+    </div>
+</body>
+</html>
